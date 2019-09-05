@@ -11,9 +11,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$%!g&m&e0%x@py7)ane9_4$^!f$5^yke2@l+!0@!#v_i*rx=kg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:4200",
@@ -128,3 +128,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'analysis.UserProfile'
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
