@@ -218,7 +218,7 @@ class allRss(APIView):
         # NDTVNEW START
         tp_api = "http://feeds.feedburner.com/ndtvnews-top-stories"
         response = requests.get(tp_api)
-        soup = BeautifulSoup(response.text, 'lxml-xml')
+        soup = BeautifulSoup(response.text, 'html.parser')
         results = soup.find_all('item')
         records = []
 
