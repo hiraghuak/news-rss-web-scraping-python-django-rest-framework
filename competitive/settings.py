@@ -11,16 +11,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$%!g&m&e0%x@py7)ane9_4$^!f$5^yke2@l+!0@!#v_i*rx=kg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =
+DEBUG = True
 
-
-
-
-
-:21
-
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:4200",
