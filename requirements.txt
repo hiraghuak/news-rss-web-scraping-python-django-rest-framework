@@ -16,7 +16,7 @@ djangorestframework==3.9.4
 entrypoints==0.3
 facebook-sdk==3.1.0
 html5lib==1.0.1
-httpie==1.0.2
+httpie==1.0.3
 idna==2.8
 ipykernel==5.1.2
 ipython==7.7.0
